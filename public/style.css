@@ -357,3 +357,59 @@ footer {
 .comment p:first-of-type {
   flex: 1;
 }
+
+/* 회원가입 */
+.contain{
+  margin-bottom: 20px;
+  border: 1px solid black;
+  padding: 100px;
+}
+
+.contain2{
+  border: 1px solid black;
+  width: 300px;
+  padding: 30px 0 30px 80px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100px;
+  padding: 1px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.writebox{
+border: 1px solid black;
+}
+
+.logo{
+  width: 100px;
+  margin-top: 10px;
+}
+
+.go {
+  text-align: right;
+}

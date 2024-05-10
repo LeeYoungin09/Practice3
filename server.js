@@ -88,7 +88,7 @@ app.get('/getPosts', async(req,res)=>{
   const page = req.query.page || 1
   // const postsPerPage = req.query.postsPerPage || 3
   const postsPerPage =3
-  const skip = (page - 1) * postsPerPage 
+  const skip = 3 + (page - 1) * postsPerPage
   try {
     const db = await getDB()
     const posts = await db.collection('posts').find().sort({createAtDate:-1}).skip(skip).limit(postsPerPage).toArray()

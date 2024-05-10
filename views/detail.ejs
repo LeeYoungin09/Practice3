@@ -117,7 +117,7 @@
     if(delBtn){
         delBtn.addEventListener('click', ()=>{
             const postId = `<%= posts._id %>`
-            fetch(`/delete/${postId}`, {
+            fetch(`/del/${postId}`, {
                 method:'POST',
                 headers:{
                     'Content-type':'application/json',
@@ -151,7 +151,6 @@
                 } 
             )
            
-
         }
     })
 

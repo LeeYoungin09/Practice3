@@ -5,10 +5,10 @@
   <form
     action="/write"
     method="post"
-    class="writecon"
+    class="writecon writebox"
     enctype="multipart/form-data"
   >
-    <label for="title">제목</label>
+    <label for="title" class="title">제목</label>
     <input
       type="text"
       name="title"
@@ -16,6 +16,7 @@
       placeholder="제목을 입력해주세요"
       required
     />
+
     <label for="postimg">이미지첨부</label>
     <input type="file" id="postimg" name="postimg" />
     <label for="content">내용</label>
