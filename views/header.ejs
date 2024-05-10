@@ -92,17 +92,16 @@
           localStorage.setItem('darkMode', document.body.classList.contains('dark') ? 'on' : 'off');
 
             changeLogo();
-        
 
             if (document.body.classList.contains('dark')) {
-    const randomIndex = Math.floor(Math.random() * colors.length);
-    const randomColor = colors[randomIndex];
-    document.body.style.backgroundColor = randomColor.backgroundColor;
-    document.body.style.color = randomColor.color;
-  } else {
-    document.body.style.backgroundColor = '';
-    document.body.style.color = '';
-  }
-        });
+                const randomIndex = Math.floor(Math.random() * colors.length);
+                const randomColor = colors[randomIndex];
+                document.body.style.backgroundColor = randomColor.backgroundColor;
+                document.body.style.color = randomColor.color;
+              } else {
+                 document.body.style.backgroundColor = '';
+                 document.body.style.color = '';
+               }
+          });
       </script>
 

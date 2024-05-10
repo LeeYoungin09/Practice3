@@ -22,6 +22,7 @@
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
+  white-space: nowrap;
 }
 
 .hd nav a {
@@ -64,6 +65,23 @@
 
 .ham {
   display: none;
+}
+
+/* 상세페이지 */
+.detail img{
+  width: 80%;
+}
+
+.detail > * {
+  margin: 20px;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.longtext{
+  line-height: 1.5rem;
 }
 
 @media (max-width: 800px) {
@@ -153,8 +171,8 @@ main h2::after {
   content: '';
   position: absolute;
   width: 100%;
-  height: 1px;
-  background-color: navy;
+  height: 2px;
+  background-color: gainsboro;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -271,14 +289,23 @@ footer {
   padding: 2rem 0;
 }
 
+.nick{
+    border: none; 
+    border-bottom: 1px solid #ccc; 
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
+  }
+
 /* write page */
 .writecon {
   /* border: 1px solid navy; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   /* align-content: flex-start; */
   align-items: flex-start;
+  padding: 50px;
 }
 
 .writecon label {
@@ -290,28 +317,41 @@ footer {
 .writecon input,
 .writecon textarea {
   box-sizing: border-box;
-  width: calc(100% - 150px);
+  width: calc(90% - 150px);
   margin-bottom: 1rem;
   padding: 1rem;
 }
 
-.writecon button {
-  padding: 1rem;
+#title {
+  width: 70%;
 }
 
+.writecon button {
+  padding: 1rem;
+  height: 50px;
+}
+
+.writebox{
+  border: 1px solid black;
+  }
+  
+  input[type="date"]{
+    border: 1px dotted lightgray;
+  }
+  
 @media (max-width: 800px) {
   .writecon {
     flex-wrap: nowrap;
     flex-direction: column;
   }
-
+  
   .writecon > label {
     text-align: center;
     border-bottom: 1px dotted lightgray;
   }
   
   .writecon > * {
-    width: 100% !important;
+    width: 90% !important;
   }
 }
 
@@ -351,7 +391,8 @@ footer {
 }
 
 .comment p {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  padding-top: 10px;
 }
 
 .comment p:first-of-type {
@@ -401,10 +442,6 @@ button {
   cursor: pointer;
 }
 
-.writebox{
-border: 1px solid black;
-}
-
 .logo{
   width: 100px;
   margin-top: 10px;
@@ -412,4 +449,10 @@ border: 1px solid black;
 
 .go {
   text-align: right;
+}
+
+.page{
+  width: 100%;
+  border: 1px dotted gray;
+  margin: 10px;
 }
