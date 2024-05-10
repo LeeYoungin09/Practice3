@@ -21,7 +21,7 @@
             <% if(posts.postImgPath == null){ %>
                 <img src="/images.png" alt="이미지 없음">
             <% } else { %>
-            <img src="/<%= posts.postImgPath %>" alt="<%= posts.title %>">
+            <img src="<%= posts.postImgPath %>" alt="<%= posts.title %>">
             <% } %>
         </div>
         <div class="longtext"><%= posts.content %></div>
